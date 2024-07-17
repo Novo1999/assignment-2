@@ -20,6 +20,7 @@ main {
 /* to make the rem value 1rem = 10px for easier calculation in mind */
 html {
   font-size: 10px;
+  background-color: #000000;
 }
 
 .inter-font {
@@ -187,4 +188,50 @@ html {
 .hero-feature__2 p {
   font-size: 1.6rem;
   color: var(--clr-light);
+}
+
+/* habit section */
+.habit-section {
+  height: 45.2rem;
+  margin-top: 10rem;
+}
+
+.habit-text {
+  text-align: center;
+  font-size: 4.8rem;
+  color: var(--clr-white);
+  margin-bottom: 1.4rem;
+}
+
+.habit-subtext {
+  text-align: center;
+  font-size: 1.4rem;
+  color: var(--clr-light);
+}
+
+.habit-boxes {
+  margin-top: 5.8rem;
+}
+.habit-box {
+  text-align: center;
+  align-items: center;
+}
+
+.habit-box > img {
+  border-radius: 50%;
+  width: 18rem;
+  height: 18rem;
+}
+
+.habit-box h5 {
+  margin-top: 2rem;
+  color: var(--clr-white);
+  font-size: 1.8rem;
+}
+
+.habit-box p {
+  color: var(--clr-light);
+  text-align: center;
+  font-size: 1.4rem;
+  max-width: 23.1rem;
 }

@@ -377,6 +377,7 @@ td {
   background-color: #333;
   color: #e0e0e0;
 }
+
 .bmi-calculator__functions-right button {
   width: 22.4rem;
   height: 5.4rem;
@@ -449,4 +450,66 @@ td {
 .team-member__details p {
   font-size: 1.8rem;
   color: var(--clr-light);
+}
+
+footer {
+  margin: 6rem auto 0 auto;
+  display: flex;
+  justify-content: space-around;
+  height: 48.9rem;
+  align-items: center;
+  background-color: var(--bg-secondary);
+}
+
+footer > div {
+  width: 44.3rem;
+}
+
+footer > div > h2:first-child {
+  font-size: 7rem;
+}
+footer > div > p {
+  font-size: 1.4rem;
+  color: var(--clr-light);
+  line-height: 2rem;
+  margin-top: 1rem;
+}
+
+footer section {
+  justify-content: space-between;
+  gap: 15.2rem;
+}
+
+footer section h2 {
+  color: var(--clr-white);
+  font-size: 3.2rem;
+}
+
+footer section li {
+  color: var(--clr-light);
+  font-size: 2.3rem;
+  margin-bottom: 1rem;
+}
+
+footer section li a {
+  text-decoration: none;
+  color: var(--clr-light);
+}
+
+.copyright {
+  height: 6rem;
+  background-color: var(--bg-secondary);
+}
+
+.copyright hr {
+  max-width: 1440px;
+  margin: 0 auto;
+  border: 1px solid var(--bg-primary);
+}
+
+.copyright p {
+  color: var(--clr-light);
+  font-size: 2rem;
+  text-align: center;
+  margin-top: 2rem;
 }

@@ -63,6 +63,8 @@ html {
 
 .fa-bars {
   display: none;
+  font-size: 3rem;
+  color: var(--clr-white);
 }
 .navbar {
   padding: 4rem;
@@ -324,7 +326,7 @@ html {
   background-color: #3b82f6;
 }
 
-.fa-solid:not(.fa-play) {
+.fa-solid:not(.fa-play, .fa-bars) {
   font-size: 3rem;
   color: var(--clr-white);
   margin-right: 1rem;

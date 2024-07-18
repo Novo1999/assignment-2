@@ -61,6 +61,9 @@ html {
   gap: 1rem;
 }
 
+.fa-bars {
+  display: none;
+}
 .navbar {
   padding: 4rem;
   max-width: 1440px;
@@ -163,11 +166,20 @@ html {
   color: var(--clr-light);
 }
 
+.fa-play {
+  margin: 0 auto;
+  font-size: 2rem;
+  color: var(--clr-white);
+}
+
 .ball {
   border-radius: 50%;
   width: 4rem;
   height: 4rem;
   background-color: var(--clr-primary);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .hero-feature__2 {
   position: absolute;
@@ -283,6 +295,57 @@ html {
   width: 300%;
   height: 100%;
   object-position: -50rem -12rem;
+}
+
+.explore-program__section {
+  margin-top: 6rem;
+  margin-bottom: 6rem;
+}
+
+.program {
+  color: var(--clr-white);
+  text-align: center;
+  margin-bottom: 6rem;
+  font-size: 4.8rem;
+}
+
+.explore-program__section-card {
+  align-items: center;
+  justify-content: center;
+  background-color: var(--bg-secondary);
+  padding: 2rem;
+  height: 24rem;
+  display: flex;
+  flex-direction: column;
+  border-radius: 1rem;
+}
+
+.explore-program__section-card:nth-child(2) {
+  background-color: #3b82f6;
+}
+
+.fa-solid:not(.fa-play) {
+  font-size: 3rem;
+  color: var(--clr-white);
+  margin-right: 1rem;
+}
+
+.card-text-2 {
+  color: var(--clr-white);
+  font-size: 1.4rem;
+  text-align: center;
+  margin-top: 1rem;
+}
+.explore-program__section-card h2 {
+  font-size: 3.8rem;
+  color: var(--clr-white);
+}
+
+.explore-program__section-card p:not(.card-text-2) {
+  font-size: 1.4rem;
+  color: var(--clr-light);
+  text-align: center;
+  margin-top: 1rem;
 }
 
 .bmi-calculator__section {
@@ -512,4 +575,175 @@ footer section li a {
   font-size: 2rem;
   text-align: center;
   margin-top: 2rem;
+}
+
+@media screen and (max-width: 576px) {
+  .nav-buttons {
+    display: none;
+  }
+  .fa-bars {
+    display: block;
+  }
+  .hero-text {
+    font-size: 3.8rem;
+    max-width: 28.5rem;
+  }
+  .hero-subtext {
+    max-width: 27.4rem;
+  }
+  .hero-btns {
+    max-width: 35.2rem;
+  }
+  .hero-btns button {
+    width: 14.9rem;
+    font-size: 1.4rem;
+    margin-left: 0.5rem;
+  }
+  .hero {
+    flex-direction: column;
+  }
+  .hero-image__box img {
+    max-width: 30.3rem;
+  }
+  .hero-feature__1 {
+    width: 15.5rem;
+    height: 7.2rem;
+    padding: 0 1rem;
+    bottom: 24rem;
+    left: 0rem;
+  }
+  .hero-feature__1 div:nth-child(2) > h4 {
+    font-size: 1.8rem;
+  }
+  .hero-feature__1 div:nth-child(2) > p {
+    font-size: 1.2rem;
+  }
+  .hero-feature__2 {
+    position: absolute;
+    background-color: var(--bg-tertiary);
+    border-radius: 1rem;
+    width: 14.5rem;
+    height: 7.2rem;
+    padding: 0 1rem;
+    top: 8rem;
+    left: 16rem;
+    justify-content: center;
+  }
+  .hero-feature__2 h4 {
+    font-size: 3rem;
+    color: var(--clr-white);
+  }
+  .hero-feature__2 p {
+    font-size: 1.2rem;
+    color: var(--clr-light);
+  }
+  /* habit section */
+  .habit-section {
+    height: fit-content;
+    margin-top: 0rem;
+    margin-bottom: 12rem;
+  }
+  .habit-boxes {
+    flex-direction: column;
+  }
+
+  .mile-runner {
+    flex-direction: column;
+    align-items: center;
+    height: fit-content;
+    padding: 4rem;
+    margin: 2rem;
+  }
+  .mile-runner__left {
+    max-width: 28.7rem;
+  }
+  .mile-runner__text {
+    font-size: 2.8rem;
+  }
+  .mile-runner__right img {
+    object-fit: cover;
+    width: 200%;
+    height: 100%;
+    max-height: 17rem;
+    object-position: -20rem -3rem;
+  }
+  .mile-runner__btn {
+    margin: 0 auto;
+    margin-bottom: 2rem;
+  }
+  .cards {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .program {
+    font-size: 3.8rem;
+  }
+
+  .explore-program__section-card {
+    width: 30rem;
+    padding: 0 2rem;
+  }
+  .explore-program__section-card h2 {
+    font-size: 2.8rem;
+  }
+  .bmi-calculator__header-text {
+    margin: 1rem;
+  }
+  .bmi-calculator__section h2 {
+    font-size: 2.8rem;
+  }
+  .bmi-calculator__functions {
+    flex-direction: column;
+    padding: 2rem;
+  }
+  .bmi-calculator__functions-left h2 {
+    font-size: 1.8rem;
+  }
+  .bmi-calculator__functions-right button {
+    margin: 0 auto;
+  }
+  .bmi-calculator__functions-right h2 {
+    font-size: 1.8rem;
+  }
+  .meet-team__members {
+    display: grid;
+    margin: 2rem;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .team-member {
+    width: 28.3rem;
+    height: 32.2rem;
+    position: relative;
+    margin: 0 auto;
+  }
+  .team-member img {
+    width: 28.3rem;
+    height: 32.2rem;
+    border-radius: 2rem;
+    object-fit: cover;
+    object-position: center;
+  }
+  footer {
+    margin: 6rem auto 0 auto;
+    display: flex;
+    height: 70.6rem;
+    flex-direction: column;
+    align-items: start;
+    padding-left: 2rem;
+    background-color: var(--bg-secondary);
+  }
+  footer section {
+    flex-direction: column;
+    gap: 0;
+  }
+  footer > div {
+    width: 30rem;
+  }
+  .copyright p {
+    color: var(--clr-light);
+    font-size: 1.6rem;
+    text-align: center;
+    margin-top: 2rem;
+  }
 }

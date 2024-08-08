@@ -61,8 +61,11 @@ html {
   gap: 1rem;
 }
 
-.fa-bars {
+.hamburger-menu {
   display: none;
+}
+
+.fa-bars {
   font-size: 3rem;
   color: var(--clr-white);
 }
@@ -326,7 +329,7 @@ html {
   background-color: #3b82f6;
 }
 
-.fa-solid:not(.fa-play, .fa-bars) {
+.fa-solid:not(.fa-play) {
   font-size: 3rem;
   color: var(--clr-white);
   margin-right: 1rem;
@@ -579,11 +582,18 @@ footer section li a {
   margin-top: 2rem;
 }
 
+@media screen and (min-width: 576px) and (max-width: 992px) {
+  .meet-team__members {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* mobile */
 @media screen and (max-width: 576px) {
   .nav-buttons {
     display: none;
   }
-  .fa-bars {
+  .hamburger-menu {
     display: block;
   }
   .hero-text {
@@ -607,6 +617,7 @@ footer section li a {
   .hero-image__box img {
     max-width: 30.3rem;
   }
+
   .hero-feature__1 {
     width: 15.5rem;
     height: 7.2rem;
